@@ -43,7 +43,7 @@ RANGE2 = range(-DIM2, DIM2)
 
 # Part one
 currentCubes = initialCubes.copy()
-for _ in range(6):
+for _ in range(NUM_CICLES):
     nextCubes = set()
     for x in RANGE1:
         for y in RANGE1:
@@ -57,7 +57,7 @@ print(len(currentCubes))
 
 # Part two
 currentCubes = initialCubes.copy()
-for _ in range(6):
+for _ in range(NUM_CICLES):
     nextCubes = set()
     for x in RANGE1:
         for y in RANGE1:
