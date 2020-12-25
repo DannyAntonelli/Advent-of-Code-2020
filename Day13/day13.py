@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 13!")
+print("="*30)
+
 # Part one
 timestamp = int(lines[0])
 busses = [int(num) for num in lines[1].split(",") if num != "x"]
@@ -19,7 +22,7 @@ for i, bus in enumerate(busses):
         minTime = waitingTime
         position = i
 
-print(minTime * busses[position])
+print("Solution #1:", minTime * busses[position])
 
 # Part two (Implementation of the Chinese remainder theorem)
 busses = [bus for bus in lines[1].split(",")]
@@ -77,4 +80,4 @@ for i in range(len(a)):
 while (number > product):
     number -= product
     
-print(number)
+print("Solution #2:", number)

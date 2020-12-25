@@ -1,7 +1,10 @@
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     numbers = sorted([int(line) for line in fin])
 numbers.insert(0, 0)
 numbers.append(max(numbers) + 3)
+
+print("Welcome to Day 10!")
+print("="*30)
 
 # Part one
 diff1 = 0
@@ -15,7 +18,7 @@ for i in range(len(numbers) - 1):
     elif difference == 3:
         diff3 += 1
 
-print(diff1 * diff3)
+print("Solution #1:", diff1 * diff3)
 
 # Part two
 def check(adapters, position=0, checked={}):
@@ -36,4 +39,4 @@ def check(adapters, position=0, checked={}):
     checked[position] = result
     return result
 
-print(check(numbers))
+print("Solution #2:", check(numbers))

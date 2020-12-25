@@ -1,5 +1,8 @@
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     numbers = [int(line) for line in fin]
+
+print("Welcome to Day 9!")
+print("="*30)
 
 # Part one
 def isWrong(numbers, target):
@@ -12,7 +15,7 @@ def isWrong(numbers, target):
 for i in range(25, len(numbers)):
     if isWrong(numbers[(i-25):i], numbers[i]):
         position = i
-print(numbers[position])
+print("Solution #1:", numbers[position])
 
 # Part two
 for i in range(position):
@@ -20,5 +23,5 @@ for i in range(position):
         if sum(numbers[i:j]) == numbers[position]:
             minNum = min(numbers[i:j])
             maxNum = max(numbers[i:j])
-            print(minNum + maxNum)
+            print("Solution #2:", minNum + maxNum)
             break

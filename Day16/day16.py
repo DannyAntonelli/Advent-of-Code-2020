@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 16!")
+print("="*30)
+
 stop = lines.index("your ticket:\n") - 1
 conditions = {}
 for line in lines[:stop]:
@@ -36,7 +39,7 @@ for i, line in enumerate(lines[start:]):
             notValid.add(i)
             break
 
-print(counter)
+print("Solution #1:", counter)
 
 counter = 0
 for i, line in enumerate(lines[start:]):
@@ -78,4 +81,5 @@ result = 1
 for position in positions:
     if "departure" in positions[position][0]:
         result *= myTicket[position]
-print(result)
+
+print("Solution #2:", result)

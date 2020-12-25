@@ -1,5 +1,8 @@
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 8!")
+print("="*30)
 
 def haltingMachine(lines, accumulator, instruction, runned):
     if instruction == len(lines) or runned[instruction]:
@@ -16,7 +19,7 @@ def haltingMachine(lines, accumulator, instruction, runned):
     return haltingMachine(lines, accumulator, instruction, runned)
 
 # Part 1
-print(haltingMachine(lines, 0, 0, [False]*len(lines))[0])
+print("Solution #1:", haltingMachine(lines, 0, 0, [False]*len(lines))[0])
 
 # Part 2
 for i, line in enumerate(lines):
@@ -30,4 +33,4 @@ for i, line in enumerate(lines):
 
     accumulator, instruction = haltingMachine(newProgram, 0, 0, [False]*len(lines))
     if instruction == len(lines):
-        print(accumulator)
+        print("Solution #2:", accumulator)

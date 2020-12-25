@@ -1,6 +1,9 @@
-with open("Day25/input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     PUB_KEY1 = int(fin.readline())
     PUB_KEY2 = int(fin.readline())
+
+print("Welcome to Day 25, Happy XMAS!")
+print("="*30)
 
 CONST_NUMBER = 20201227
 def getLoop(KEY, subjectNumber = 7):
@@ -21,5 +24,7 @@ def transform(subjectNumber, loopSize):
         value *= subjectNumber
         value %= CONST_NUMBER
 
+    return value
+
 loopSize = getLoop(PUB_KEY1)
-print(transform(PUB_KEY2, loopSize))
+print("Solution:", transform(PUB_KEY2, loopSize))

@@ -1,5 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 11!")
+print("="*30)
+
 for i in range(len(lines)):
     lines[i] = list(lines[i].strip())
 
@@ -48,7 +52,7 @@ while seats != lines:
         for j in range(len(lines[i])):
             changeState1(seats, lines, i, j)
 
-print(countSeats(seats))
+print("Solution #1:", countSeats(seats))
 
 # Part Two
 def checkRowColumn(seats, posY, posX):
@@ -159,4 +163,4 @@ while seats != lines2:
         for j in range(len(lines2[i])):
             changeState2(seats, lines2, i, j)           
 
-print(countSeats(seats))
+print("Solution #2:", countSeats(seats))

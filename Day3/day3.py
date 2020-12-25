@@ -1,5 +1,8 @@
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 3!")
+print("="*30)
 
 def solve(x, y):
     positionX = 0
@@ -15,7 +18,7 @@ def solve(x, y):
     return counter
 
 # Part one
-print(solve(3, 1))
+print("Solution #1:", solve(3, 1))
 
 # Part two
-print(solve(1, 1) * solve(3, 1) * solve(5, 1) * solve(7, 1) * solve(1, 2))
+print("Solution #2:", solve(1, 1) * solve(3, 1) * solve(5, 1) * solve(7, 1) * solve(1, 2))

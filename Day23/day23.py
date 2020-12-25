@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     cups = [int(cup) for cup in fin.read()]
 
+print("Welcome to Day 23!")
+print("="*30)
+
 class Cup():
     def __init__(self, value):
         self.value = value
@@ -68,9 +71,10 @@ def solve(cups, moves, part):
         current = current.right
 
     if part == 1:
+        print("Solution #1: ", end="")
         cupList[1].printCups()
     else:
-        print(cupList[1].right.value * (cupList[1].right).right.value)
+        print("Solution #2:", cupList[1].right.value * (cupList[1].right).right.value)
 
 # Part one
 solve(cups, 100, 1)

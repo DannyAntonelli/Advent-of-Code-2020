@@ -2,6 +2,9 @@ with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 NUM_CICLES = 6
 
+print("Welcome to Day 17!")
+print("="*30)
+
 def checkState(previousCubes, x, y, z, w=0, dim=3):
     RANGE_NUM = range(-1, 2)
     countPositive = 0
@@ -53,7 +56,7 @@ for _ in range(NUM_CICLES):
                     nextCubes.add(result)
     currentCubes = nextCubes.copy()
 
-print(len(currentCubes))
+print("Solution #1:", len(currentCubes))
 
 # Part two
 currentCubes = initialCubes.copy()
@@ -68,4 +71,4 @@ for _ in range(NUM_CICLES):
                         nextCubes.add(result)
     currentCubes = nextCubes.copy()
 
-print(len(currentCubes))
+print("Solution #2:", len(currentCubes))

@@ -1,5 +1,8 @@
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 2!")
+print("="*30)
 
 # Part one
 counter = 0
@@ -12,7 +15,7 @@ for line in lines:
 
     if occurencies >= int(numbers[0]) and occurencies <= int(numbers[1]):
         counter += 1
-print(counter)
+print("Solution #1", counter)
 
 # Part two
 counter = 0
@@ -25,4 +28,4 @@ for line in lines:
     
     if (password[int(numbers[0])-1] == letter) ^ (password[int(numbers[1])-1] == letter):
         counter += 1
-print(counter)
+print("Solution #2:", counter)

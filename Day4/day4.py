@@ -1,8 +1,11 @@
 import re
 
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
     
+print("Welcome to Day 4!")
+print("="*30)
+
 # Part one
 counter = 0
 valid = 0
@@ -19,7 +22,7 @@ for line in lines:
     if counter == 7 and not isValid:
         valid += 1
         isValid = True
-print(valid)
+print("Solution #1:", valid)
 
 # Part two
 def check(dictionary):
@@ -54,4 +57,4 @@ for line in lines:
     if check(passport) and not isValid:
         valid += 1
         isValid = True
-print(valid)
+print("Solution #2:", valid)

@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 18!")
+print("="*30)
+
 def getEx(expression):
     parenthesis = 1
     i = 0
@@ -57,7 +60,7 @@ for line in lines:
     result2 += int(evaluate(line, True))
 
 # Part one
-print(result1)
+print("Solution #1:", result1)
 
 # Part two
-print(result2)
+print("Solution #2:", result2)

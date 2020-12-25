@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 12!")
+print("="*30)
+
 # Part one
 coordinatesShip = {"N": 0, "E": 0, "S": 0, "W": 0}
 turn = {"N": ["ESW", "WSE"], "E": ["SWN", "NWS"], "S": ["WNE", "ENW"], "W": ["NES", "SEN"]}
@@ -30,7 +33,7 @@ for line in lines:
         num = int(line[1:]) // 90 - 1
         direction = turn[direction][1][num]
 
-print(abs(coordinatesShip["N"] - coordinatesShip["S"]) + abs(coordinatesShip["E"] - coordinatesShip["W"]))
+print("Solution #1:", abs(coordinatesShip["N"] - coordinatesShip["S"]) + abs(coordinatesShip["E"] - coordinatesShip["W"]))
 
 # Part two
 coordinatesShip = {"N": 0, "E": 0, "S": 0, "W": 0}
@@ -74,4 +77,4 @@ for line in lines:
         
         coordinatesWaypoint = temp.copy()
 
-print(abs(coordinatesShip["N"] - coordinatesShip["S"]) + abs(coordinatesShip["E"] - coordinatesShip["W"]))
+print("Solution #2:", abs(coordinatesShip["N"] - coordinatesShip["S"]) + abs(coordinatesShip["E"] - coordinatesShip["W"]))

@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 14!")
+print("="*30)
+
 def sumMemory(memory):
     sumValues = 0
     for address in memory:
@@ -31,7 +34,7 @@ for line in lines:
 
         memory[instruction[1]] = int(newValue, 2)
 
-print(sumMemory(memory))
+print("Solution #1:", sumMemory(memory))
 
 # Part two
 memory = {}
@@ -72,4 +75,4 @@ for line in lines:
         else:
             memory[address] = value
 
-print(sumMemory(memory))
+print("Solution #2:", sumMemory(memory))

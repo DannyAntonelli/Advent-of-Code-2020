@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 22!")
+print("="*30)
+
 def countPoints(player):
     result = 0
     for i, num in enumerate(player[::-1], 1):
@@ -33,7 +36,7 @@ def game1(p1, p2):
         return p1
     return p2
 
-print(countPoints(game1(p1.copy(), p2.copy())))
+print("Solution #1:", countPoints(game1(p1.copy(), p2.copy())))
 
 # Part two
 def game2(p1, p2):
@@ -69,4 +72,4 @@ if winner == 1:
 else:
     player = p2
 
-print(countPoints(player))
+print("Solution #2:", countPoints(player))

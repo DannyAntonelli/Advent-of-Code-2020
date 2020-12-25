@@ -1,5 +1,8 @@
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 6!")
+print("="*30)
 
 # Part one
 answers1 = set()
@@ -13,7 +16,8 @@ for line in lines:
             if c != "\n":
                 answers1.add(c)
 sumAnswers += len(answers1)
-print(sumAnswers)
+
+print("Solution #1:", sumAnswers)
 
 # Part two
 answers2 = []
@@ -38,4 +42,5 @@ for c in answers2:
     if answers2.count(c) == num:
         added.add(c)
 sumAnswers += len(added)
-print(sumAnswers)
+
+print("Solution #2:", sumAnswers)

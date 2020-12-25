@@ -1,7 +1,10 @@
 import re
 
-with open("input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 7!")
+print("="*30)
 
 colors = {}
 for line in lines:
@@ -40,7 +43,7 @@ counter = 0
 for color in colors:
     if search(colors, color):
         counter += 1
-print(counter)
+print("Solution #1:", counter)
 
 # Part two
 def count(dictionary, key, memo={}):
@@ -58,4 +61,4 @@ def count(dictionary, key, memo={}):
     memo[key] = sum(results)
     return memo[key]
     
-print(count(colors, "shiny gold"))
+print("Solution #2:", count(colors, "shiny gold"))

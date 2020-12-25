@@ -1,5 +1,8 @@
-with open("Day24/input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
+
+print("Welcome to Day 24!")
+print("="*30)
 
 # Part one
 dictionary = {
@@ -27,7 +30,7 @@ for line in lines:
     else:
         currentTiles.add((x, y))
 
-print(len(currentTiles))
+print("Solution #1:", len(currentTiles))
 
 # Part two
 RANGE_ADJ = {(2, 0), (1, -1), (-1, -1), (-2, 0), (-1, 1), (1, 1)}
@@ -59,4 +62,4 @@ for _ in range(100):
 
     currentTiles = nextTiles.copy()
 
-print(len(currentTiles))
+print("Solution #2:", len(currentTiles))

@@ -1,6 +1,9 @@
 with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
+print("Welcome to Day 21!")
+print("="*30)
+
 allIngredients = []
 allergens = {}
 for line in lines:
@@ -26,7 +29,7 @@ counter = 0
 for i in allIngredients:
     if i not in dangerousIngredients:
         counter += 1
-print(counter)
+print("Solution #1:", counter)
 
 # Part two
 finished = False
@@ -52,4 +55,4 @@ for al in allAllergens:
     result += list(allergens[al])[0] + ","
 result = result[:len(result)-1]
 
-print(result)
+print("Solution #2:", result)
