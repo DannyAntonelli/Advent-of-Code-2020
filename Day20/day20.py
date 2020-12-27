@@ -43,7 +43,7 @@ def getCorners(tiles):
             if num1 != num2:
 
                 for c1 in coordinates:
-                    for c2 in coordianates:
+                    for c2 in coordinates:
                         side1 = getSide(tiles[num1], c1)
                         side2 = getSide(tiles[num2], c2)
 
