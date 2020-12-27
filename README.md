@@ -5,7 +5,7 @@ A repository of my [Advent of Code 2020](https://adventofcode.com/2020) solution
 Advent of Code is a yearly coding challenge created by [Eric Wastl](https://twitter.com/ericwastl). Every day, from Dec 1st to Dec25th, a coding challenge is released and developes from all over the world can try to solve it with which programming language they prefer the most. This is the first year I tried to solve them.
 
 ## Here are my results!
-**Final score:** 45/50 🌟
+**Final score:** 48/50 🌟
 | Day  | Part One | Part Two | 
 |---|:---:|:---:|
 |[Day 1: Report Repair](https://adventofcode.com/2020/day/1)| 🌟 | 🌟 |
@@ -26,8 +26,8 @@ Advent of Code is a yearly coding challenge created by [Eric Wastl](https://twit
 |[Day 16: Ticket Translation](https://adventofcode.com/2020/day/16)| 🌟 | 🌟 |
 |[Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)| 🌟 | 🌟 |
 |[Day 18: Operation Order](https://adventofcode.com/2020/day/18)| 🌟 | 🌟 |
-|[Day 19: Monster Messages](https://adventofcode.com/2020/day/19)|   |   |
-|[Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)|   |   |
+|[Day 19: Monster Messages](https://adventofcode.com/2020/day/19)| 🌟 | 🌟 |
+|[Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)| 🌟 |   |
 |[Day 21: Allergen Assessment](https://adventofcode.com/2020/day/21)| 🌟 | 🌟 |
 |[Day 22: Crab Combat](https://adventofcode.com/2020/day/22)| 🌟 | 🌟 |
 |[Day 23: Crab Cups](https://adventofcode.com/2020/day/23)| 🌟 | 🌟 |
