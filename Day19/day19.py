@@ -1,4 +1,4 @@
-with open("Day19/input.txt", "r", encoding="UTF-8") as fin:
+with open("./input.txt", "r", encoding="UTF-8") as fin:
     lines = fin.readlines()
 
 print("Welcome to Day 19!")
